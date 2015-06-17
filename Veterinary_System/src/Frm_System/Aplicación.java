@@ -22,7 +22,7 @@ public class Aplicación extends javax.swing.JFrame {
      */
     public Aplicación() {
         initComponents();
-        Mensaje = new ImageIcon("src/Imagen/contraseña.png");
+        Mensaje = new ImageIcon("src/Imagen_System/contraseña.png");
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Principal");
