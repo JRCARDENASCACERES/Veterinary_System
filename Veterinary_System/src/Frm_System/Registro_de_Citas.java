@@ -129,7 +129,8 @@ public class Registro_de_Citas extends javax.swing.JFrame {
                 .addGap(73, 73, 73)
                 .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton6)
-                    .addComponent(jButton7)))
+                    .addComponent(jButton7))
+                .addGap(343, 343, 343))
         );
         jcMousePanel2Layout.setVerticalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,7 +138,8 @@ public class Registro_de_Citas extends javax.swing.JFrame {
                 .addGap(50, 50, 50)
                 .addComponent(jButton6)
                 .addGap(67, 67, 67)
-                .addComponent(jButton7))
+                .addComponent(jButton7)
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
@@ -193,10 +195,10 @@ public class Registro_de_Citas extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Historial", jInternalFrame3);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/archive.png"))); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/archive.png"))); // NOI18N
         jMenu1.setText("Archivo");
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/client.png"))); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/client.png"))); // NOI18N
         jMenuItem2.setText("Registro de Clientes");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,7 +207,7 @@ public class Registro_de_Citas extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem2);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/exit.png"))); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/exit.png"))); // NOI18N
         jMenuItem3.setText("Salir");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,7 +231,7 @@ public class Registro_de_Citas extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE)
         );
 
         pack();

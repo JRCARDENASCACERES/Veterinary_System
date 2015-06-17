@@ -25,7 +25,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagen/archive.png"/>
+              <Image iconType="3" name="/Imagen_System/archive.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Archivo"/>
           </Properties>
@@ -33,7 +33,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagen/cita.png"/>
+                  <Image iconType="3" name="/Imagen_System/cita.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Registro de Citas"/>
               </Properties>
@@ -44,7 +44,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagen/exit.png"/>
+                  <Image iconType="3" name="/Imagen_System/exit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Salir"/>
               </Properties>

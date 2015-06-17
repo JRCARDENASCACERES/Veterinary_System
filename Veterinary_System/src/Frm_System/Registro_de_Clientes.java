@@ -258,10 +258,10 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Registro de Animales", jInternalFrame3);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/archive.png"))); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/archive.png"))); // NOI18N
         jMenu3.setText("Archivo");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/cita.png"))); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/cita.png"))); // NOI18N
         jMenuItem1.setText("Registro de Citas");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -270,7 +270,7 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem1);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/exit.png"))); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/exit.png"))); // NOI18N
         jMenuItem2.setText("Salir");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
