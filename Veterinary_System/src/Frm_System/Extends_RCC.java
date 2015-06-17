@@ -39,13 +39,16 @@ public class Extends_RCC extends javax.swing.JFrame {
 
         jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/regiscliente.png"))); // NOI18N
         jButton1.setText("Registro de Clientes");
+        jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/regisCitas.png"))); // NOI18N
         jButton2.setText("Registro de Citas");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,7 +56,11 @@ public class Extends_RCC extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/startinicio.png"))); // NOI18N
         jButton3.setText("Inicio");
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -67,26 +74,25 @@ public class Extends_RCC extends javax.swing.JFrame {
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(261, 261, 261)
-                        .addComponent(jButton1))
+                        .addGap(229, 229, 229)
+                        .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1)))
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(275, 275, 275)
-                        .addComponent(jButton2))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(301, 301, 301)
+                        .addGap(282, 282, 282)
                         .addComponent(jButton3)))
-                .addContainerGap(281, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(137, 137, 137)
+                .addGap(90, 90, 90)
                 .addComponent(jButton1)
-                .addGap(59, 59, 59)
+                .addGap(31, 31, 31)
                 .addComponent(jButton2)
-                .addGap(59, 59, 59)
+                .addGap(29, 29, 29)
                 .addComponent(jButton3)
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
