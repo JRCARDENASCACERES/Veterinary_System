@@ -58,6 +58,8 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -66,6 +68,8 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jTabbedPane2.setPreferredSize(new java.awt.Dimension(1340, 655));
 
         jInternalFrame1.setVisible(true);
 
@@ -231,7 +235,7 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
                         .addGap(94, 94, 94)
                         .addComponent(jButton9)))
-                .addContainerGap(413, Short.MAX_VALUE))
+                .addContainerGap(1102, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,7 +246,7 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
                 .addComponent(jButton8)
                 .addGap(42, 42, 42)
                 .addComponent(jButton9)
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(363, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jInternalFrame3Layout = new javax.swing.GroupLayout(jInternalFrame3.getContentPane());
@@ -259,7 +263,7 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jTabbedPane2.addTab("Registro de Animales", jInternalFrame3);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/archive.png"))); // NOI18N
-        jMenu3.setText("Archivo");
+        jMenu3.setText("Menú");
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/cita.png"))); // NOI18N
         jMenuItem1.setText("Registro de Citas");
@@ -282,18 +286,24 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jMenuBar2.add(jMenu3);
         jMenuBar2.add(jMenu4);
 
+        jMenu5.setText("Información");
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Ayuda");
+        jMenuBar2.add(jMenu6);
+
         setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jTabbedPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 507, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -372,6 +382,8 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;

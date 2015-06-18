@@ -34,12 +34,20 @@ public class Extends_RCC extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jcMousePanel2 = new jcMousePanel.jcMousePanel();
+        jcMousePanel3 = new jcMousePanel.jcMousePanel();
+        jcMousePanel4 = new jcMousePanel.jcMousePanel();
+        jcMousePanel5 = new jcMousePanel.jcMousePanel();
+        jcMousePanel6 = new jcMousePanel.jcMousePanel();
+        jcMousePanel7 = new jcMousePanel.jcMousePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
-        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1350, 690));
+        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1345, 685));
+        jcMousePanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/regiscliente.png"))); // NOI18N
         jButton1.setText("Registro de Clientes");
         jButton1.setBorderPainted(false);
@@ -48,7 +56,9 @@ public class Extends_RCC extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jcMousePanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 312, -1));
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/regisCitas.png"))); // NOI18N
         jButton2.setText("Registro de Citas");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -56,7 +66,9 @@ public class Extends_RCC extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        jcMousePanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 320, 265, -1));
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/startinicio.png"))); // NOI18N
         jButton3.setText("Inicio");
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -67,34 +79,97 @@ public class Extends_RCC extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
+        jcMousePanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 480, -1, -1));
 
-        javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
-        jcMousePanel1.setLayout(jcMousePanel1Layout);
-        jcMousePanel1Layout.setHorizontalGroup(
-            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(229, 229, 229)
-                        .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1)))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(282, 282, 282)
-                        .addComponent(jButton3)))
-                .addContainerGap(926, Short.MAX_VALUE))
+        jcMousePanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/leon.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
+        jcMousePanel2.setLayout(jcMousePanel2Layout);
+        jcMousePanel2Layout.setHorizontalGroup(
+            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
-        jcMousePanel1Layout.setVerticalGroup(
-            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton1)
-                .addGap(31, 31, 31)
-                .addComponent(jButton2)
-                .addGap(29, 29, 29)
-                .addComponent(jButton3)
-                .addContainerGap(309, Short.MAX_VALUE))
+        jcMousePanel2Layout.setVerticalGroup(
+            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
+
+        jcMousePanel1.add(jcMousePanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, -1, -1));
+
+        jcMousePanel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/pink.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel3Layout = new javax.swing.GroupLayout(jcMousePanel3);
+        jcMousePanel3.setLayout(jcMousePanel3Layout);
+        jcMousePanel3Layout.setHorizontalGroup(
+            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jcMousePanel3Layout.setVerticalGroup(
+            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jcMousePanel1.add(jcMousePanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 190, -1, -1));
+
+        jcMousePanel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/dog.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel4Layout = new javax.swing.GroupLayout(jcMousePanel4);
+        jcMousePanel4.setLayout(jcMousePanel4Layout);
+        jcMousePanel4Layout.setHorizontalGroup(
+            jcMousePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jcMousePanel4Layout.setVerticalGroup(
+            jcMousePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jcMousePanel1.add(jcMousePanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 490, -1, -1));
+
+        jcMousePanel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/turtle.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel5Layout = new javax.swing.GroupLayout(jcMousePanel5);
+        jcMousePanel5.setLayout(jcMousePanel5Layout);
+        jcMousePanel5Layout.setHorizontalGroup(
+            jcMousePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jcMousePanel5Layout.setVerticalGroup(
+            jcMousePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jcMousePanel1.add(jcMousePanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 480, -1, -1));
+
+        jcMousePanel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/ardilla.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel6Layout = new javax.swing.GroupLayout(jcMousePanel6);
+        jcMousePanel6.setLayout(jcMousePanel6Layout);
+        jcMousePanel6Layout.setHorizontalGroup(
+            jcMousePanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jcMousePanel6Layout.setVerticalGroup(
+            jcMousePanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jcMousePanel1.add(jcMousePanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, -1, -1));
+
+        jcMousePanel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/tucan.png"))); // NOI18N
+
+        javax.swing.GroupLayout jcMousePanel7Layout = new javax.swing.GroupLayout(jcMousePanel7);
+        jcMousePanel7.setLayout(jcMousePanel7Layout);
+        jcMousePanel7Layout.setHorizontalGroup(
+            jcMousePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 80, Short.MAX_VALUE)
+        );
+        jcMousePanel7Layout.setVerticalGroup(
+            jcMousePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 80, Short.MAX_VALUE)
+        );
+
+        jcMousePanel1.add(jcMousePanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 370, 80, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -171,5 +246,11 @@ public class Extends_RCC extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private jcMousePanel.jcMousePanel jcMousePanel1;
+    private jcMousePanel.jcMousePanel jcMousePanel2;
+    private jcMousePanel.jcMousePanel jcMousePanel3;
+    private jcMousePanel.jcMousePanel jcMousePanel4;
+    private jcMousePanel.jcMousePanel jcMousePanel5;
+    private jcMousePanel.jcMousePanel jcMousePanel6;
+    private jcMousePanel.jcMousePanel jcMousePanel7;
     // End of variables declaration//GEN-END:variables
 }
