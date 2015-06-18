@@ -31,24 +31,24 @@ public class Registro_de_Citas extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jcMousePanel1 = new jcMousePanel.jcMousePanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         jInternalFrame2 = new javax.swing.JInternalFrame();
         jcMousePanel2 = new jcMousePanel.jcMousePanel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btnInsertarRegistroDeVacuna = new javax.swing.JButton();
+        btnConsultarFechaDeVacunas = new javax.swing.JButton();
         jInternalFrame3 = new javax.swing.JInternalFrame();
         jcMousePanel3 = new jcMousePanel.jcMousePanel();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnInsertarHistoarialMedico = new javax.swing.JButton();
+        btnGuardarHistorialMedico = new javax.swing.JButton();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jcMousePanel1 = new jcMousePanel.jcMousePanel();
+        btnInicio = new javax.swing.JButton();
+        btnRegistroCitas = new javax.swing.JButton();
+        btnActualizarCitas = new javax.swing.JButton();
+        btnConsultarCita = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu = new javax.swing.JMenu();
+        jMenuRegistroDeClientes = new javax.swing.JMenuItem();
+        jMenuSalir = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -57,81 +57,13 @@ public class Registro_de_Citas extends javax.swing.JFrame {
 
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(1340, 655));
 
-        jInternalFrame1.setOpaque(true);
-        jInternalFrame1.setPreferredSize(new java.awt.Dimension(1350, 690));
-        try {
-            jInternalFrame1.setSelected(true);
-        } catch (java.beans.PropertyVetoException e1) {
-            e1.printStackTrace();
-        }
-        jInternalFrame1.setVisible(true);
-
-        jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
-        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1350, 690));
-
-        jButton1.setText("Inicio");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("Registro de Citas");
-
-        jButton4.setText("Actualizar Cita");
-
-        jButton5.setText("Consultar Cita");
-
-        javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
-        jcMousePanel1.setLayout(jcMousePanel1Layout);
-        jcMousePanel1Layout.setHorizontalGroup(
-            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton3))
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton4))
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton5))
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(291, 291, 291)
-                .addComponent(jButton1))
-        );
-        jcMousePanel1Layout.setVerticalGroup(
-            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton3)
-                .addGap(61, 61, 61)
-                .addComponent(jButton4)
-                .addGap(47, 47, 47)
-                .addComponent(jButton5)
-                .addGap(108, 108, 108)
-                .addComponent(jButton1))
-        );
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1319, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Registro de Citas", jInternalFrame1);
-
         jInternalFrame2.setVisible(true);
 
-        jcMousePanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
+        jcMousePanel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
-        jButton6.setText("Insertar Registro de fecha de vacuna ");
+        btnInsertarRegistroDeVacuna.setText("Insertar Registro de fecha de vacuna ");
 
-        jButton7.setText("Consultar fechas de Vacunas ");
+        btnConsultarFechaDeVacunas.setText("Consultar fechas de Vacunas ");
 
         javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
         jcMousePanel2.setLayout(jcMousePanel2Layout);
@@ -140,18 +72,18 @@ public class Registro_de_Citas extends javax.swing.JFrame {
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
                 .addGap(73, 73, 73)
                 .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7))
+                    .addComponent(btnInsertarRegistroDeVacuna)
+                    .addComponent(btnConsultarFechaDeVacunas))
                 .addGap(343, 343, 343))
         );
         jcMousePanel2Layout.setVerticalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jButton6)
+                .addComponent(btnInsertarRegistroDeVacuna)
                 .addGap(67, 67, 67)
-                .addComponent(jButton7)
-                .addContainerGap(469, Short.MAX_VALUE))
+                .addComponent(btnConsultarFechaDeVacunas)
+                .addContainerGap(311, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
@@ -169,11 +101,11 @@ public class Registro_de_Citas extends javax.swing.JFrame {
 
         jInternalFrame3.setVisible(true);
 
-        jcMousePanel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
+        jcMousePanel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
-        jButton8.setText("Insertar historial médico ");
+        btnInsertarHistoarialMedico.setText("Insertar historial médico ");
 
-        jButton9.setText("Consultar historial médico ");
+        btnGuardarHistorialMedico.setText("Consultar historial médico ");
 
         javax.swing.GroupLayout jcMousePanel3Layout = new javax.swing.GroupLayout(jcMousePanel3);
         jcMousePanel3.setLayout(jcMousePanel3Layout);
@@ -182,16 +114,16 @@ public class Registro_de_Citas extends javax.swing.JFrame {
             .addGroup(jcMousePanel3Layout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addGroup(jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)))
+                    .addComponent(btnInsertarHistoarialMedico)
+                    .addComponent(btnGuardarHistorialMedico)))
         );
         jcMousePanel3Layout.setVerticalGroup(
             jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel3Layout.createSequentialGroup()
                 .addGap(98, 98, 98)
-                .addComponent(jButton8)
+                .addComponent(btnInsertarHistoarialMedico)
                 .addGap(66, 66, 66)
-                .addComponent(jButton9))
+                .addComponent(btnGuardarHistorialMedico))
         );
 
         javax.swing.GroupLayout jInternalFrame3Layout = new javax.swing.GroupLayout(jInternalFrame3.getContentPane());
@@ -207,28 +139,102 @@ public class Registro_de_Citas extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Historial", jInternalFrame3);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/archive.png"))); // NOI18N
-        jMenu1.setText("Menú");
+        jInternalFrame1.setOpaque(true);
+        jInternalFrame1.setPreferredSize(new java.awt.Dimension(1350, 690));
+        try {
+            jInternalFrame1.setSelected(true);
+        } catch (java.beans.PropertyVetoException e1) {
+            e1.printStackTrace();
+        }
+        jInternalFrame1.setVisible(true);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/client.png"))); // NOI18N
-        jMenuItem2.setText("Registro de Clientes");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
+        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1350, 690));
+
+        btnInicio.setText("Inicio");
+        btnInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                btnInicioActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/exit.png"))); // NOI18N
-        jMenuItem3.setText("Salir");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistroCitas.setText("Registro de Citas");
+
+        btnActualizarCitas.setText("Actualizar Cita");
+
+        btnConsultarCita.setText("Consultar Cita");
+
+        javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
+        jcMousePanel1.setLayout(jcMousePanel1Layout);
+        jcMousePanel1Layout.setHorizontalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(btnRegistroCitas))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(btnActualizarCitas))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(btnConsultarCita))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(107, 107, 107)
+                        .addComponent(btnInicio)))
+                .addContainerGap(1074, Short.MAX_VALUE))
+        );
+        jcMousePanel1Layout.setVerticalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(btnRegistroCitas)
+                .addGap(61, 61, 61)
+                .addComponent(btnActualizarCitas)
+                .addGap(47, 47, 47)
+                .addComponent(btnConsultarCita)
+                .addGap(56, 56, 56)
+                .addComponent(btnInicio)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1279, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Registro de Citas", jInternalFrame1);
+
+        jMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\archive.png")); // NOI18N
+        jMenu.setText("Menú");
+
+        jMenuRegistroDeClientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\client.png")); // NOI18N
+        jMenuRegistroDeClientes.setText("Registro de Clientes");
+        jMenuRegistroDeClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuRegistroDeClientesActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        jMenu.add(jMenuRegistroDeClientes);
 
-        jMenuBar1.add(jMenu1);
+        jMenuSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\exit.png")); // NOI18N
+        jMenuSalir.setText("Salir");
+        jMenuSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuSalirActionPerformed(evt);
+            }
+        });
+        jMenu.add(jMenuSalir);
+
+        jMenuBar1.add(jMenu);
 
         jMenu3.setText("Información");
         jMenuBar1.add(jMenu3);
@@ -243,35 +249,33 @@ public class Registro_de_Citas extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 785, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         Extends_RCC frm = new Extends_RCC();
         frm.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSalirActionPerformed
         Aplicación frm = new Aplicación();
         frm.setVisible(true);
         dispose();        
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_jMenuSalirActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMenuRegistroDeClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegistroDeClientesActionPerformed
         Registro_de_Clientes frm = new Registro_de_Clientes();
         frm.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMenuRegistroDeClientesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -309,24 +313,24 @@ public class Registro_de_Citas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnActualizarCitas;
+    private javax.swing.JButton btnConsultarCita;
+    private javax.swing.JButton btnConsultarFechaDeVacunas;
+    private javax.swing.JButton btnGuardarHistorialMedico;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnInsertarHistoarialMedico;
+    private javax.swing.JButton btnInsertarRegistroDeVacuna;
+    private javax.swing.JButton btnRegistroCitas;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JInternalFrame jInternalFrame3;
-    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuRegistroDeClientes;
+    private javax.swing.JMenuItem jMenuSalir;
     private javax.swing.JTabbedPane jTabbedPane1;
     private jcMousePanel.jcMousePanel jcMousePanel1;
     private jcMousePanel.jcMousePanel jcMousePanel2;

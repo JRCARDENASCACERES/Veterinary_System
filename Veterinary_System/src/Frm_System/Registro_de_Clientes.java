@@ -33,33 +33,31 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        jTabbedPane2 = new javax.swing.JTabbedPane();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jcMousePanel3 = new jcMousePanel.jcMousePanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        jTabbeRegistroClientes = new javax.swing.JTabbedPane();
         jInternalFrame2 = new javax.swing.JInternalFrame();
-        jcMousePanel2 = new jcMousePanel.jcMousePanel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jcMousePanel3 = new jcMousePanel.jcMousePanel();
+        btnInsertarPersonas = new javax.swing.JButton();
+        btnElimnarPersonas = new javax.swing.JButton();
+        btnConsultarPersonas = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTablePerosonas = new javax.swing.JTable();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jcMousePanel2 = new jcMousePanel.jcMousePanel();
+        btnInsertarClientes = new javax.swing.JButton();
+        btnEliminarClientes = new javax.swing.JButton();
+        btnConsultarClientes = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
+        txtInsertarClientes = new javax.swing.JTextField();
         jInternalFrame3 = new javax.swing.JInternalFrame();
         jcMousePanel1 = new jcMousePanel.jcMousePanel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnInsertarAnimales = new javax.swing.JButton();
+        btnEliminarAnimales = new javax.swing.JButton();
+        btnConsultarAnimales = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuArchivo = new javax.swing.JMenu();
+        jMenuRegistroDeCitas = new javax.swing.JMenuItem();
+        jMenuSalir = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -69,86 +67,18 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTabbedPane2.setPreferredSize(new java.awt.Dimension(1340, 655));
-
-        jInternalFrame1.setVisible(true);
-
-        jcMousePanel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
-
-        jButton1.setText("Insertar Clientes");
-
-        jButton2.setText("Eliminar Clientes");
-
-        jButton3.setText("Consultar Clientes");
-
-        jButton10.setText("Inicio");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jcMousePanel3Layout = new javax.swing.GroupLayout(jcMousePanel3);
-        jcMousePanel3.setLayout(jcMousePanel3Layout);
-        jcMousePanel3Layout.setHorizontalGroup(
-            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                .addGroup(jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jButton1)
-                        .addGap(45, 45, 45)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jButton2))
-                    .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jButton3))
-                    .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                        .addGap(300, 300, 300)
-                        .addComponent(jButton10)))
-                .addGap(276, 276, 276))
-        );
-        jcMousePanel3Layout.setVerticalGroup(
-            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel3Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addGroup(jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addComponent(jButton2)
-                .addGap(51, 51, 51)
-                .addComponent(jButton3)
-                .addGap(118, 118, 118)
-                .addComponent(jButton10))
-        );
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        jTabbedPane2.addTab("Registro de Clientes", jInternalFrame1);
-
+        jInternalFrame2.setFrameIcon(null);
         jInternalFrame2.setVisible(true);
 
-        jcMousePanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
+        jcMousePanel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
-        jButton4.setText("Insertar Personas");
+        btnInsertarPersonas.setText("Insertar Personas");
 
-        jButton5.setText("Eliminar Personas");
+        btnElimnarPersonas.setText("Eliminar Personas");
 
-        jButton6.setText("Consultar Personas");
+        btnConsultarPersonas.setText("Consultar Personas");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTablePerosonas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -164,89 +94,153 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTablePerosonas);
 
-        javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
-        jcMousePanel2.setLayout(jcMousePanel2Layout);
-        jcMousePanel2Layout.setHorizontalGroup(
-            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jButton5))
-                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jButton6)))
-                .addGap(47, 47, 47)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
+        javax.swing.GroupLayout jcMousePanel3Layout = new javax.swing.GroupLayout(jcMousePanel3);
+        jcMousePanel3.setLayout(jcMousePanel3Layout);
+        jcMousePanel3Layout.setHorizontalGroup(
+            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel3Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnElimnarPersonas)
+                    .addComponent(btnInsertarPersonas)
+                    .addComponent(btnConsultarPersonas))
+                .addGap(45, 45, 45)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
-        jcMousePanel2Layout.setVerticalGroup(
-            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(jButton4)
-                .addGap(34, 34, 34)
-                .addComponent(jButton5)
-                .addGap(39, 39, 39)
-                .addComponent(jButton6))
-            .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
+        jcMousePanel3Layout.setVerticalGroup(
+            jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel3Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jcMousePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jcMousePanel3Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(btnInsertarPersonas)
+                        .addGap(33, 33, 33)
+                        .addComponent(btnElimnarPersonas)
+                        .addGap(41, 41, 41)
+                        .addComponent(btnConsultarPersonas)))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
         jInternalFrame2.getContentPane().setLayout(jInternalFrame2Layout);
         jInternalFrame2Layout.setHorizontalGroup(
             jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jcMousePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jInternalFrame2Layout.setVerticalGroup(
             jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame2Layout.createSequentialGroup()
+                .addComponent(jcMousePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbeRegistroClientes.addTab("Registro de Personas", jInternalFrame2);
+
+        jInternalFrame1.setFrameIcon(null);
+        jInternalFrame1.setVisible(true);
+
+        jcMousePanel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
+
+        btnInsertarClientes.setText("Insertar Clientes");
+
+        btnEliminarClientes.setText("Eliminar Clientes");
+
+        btnConsultarClientes.setText("Consultar Clientes");
+
+        btnInicio.setText("Inicio");
+        btnInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInicioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
+        jcMousePanel2.setLayout(jcMousePanel2Layout);
+        jcMousePanel2Layout.setHorizontalGroup(
+            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnConsultarClientes)
+                        .addComponent(btnEliminarClientes)
+                        .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                            .addComponent(btnInsertarClientes)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtInsertarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(btnInicio)))
+                .addContainerGap(328, Short.MAX_VALUE))
+        );
+        jcMousePanel2Layout.setVerticalGroup(
+            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertarClientes)
+                    .addComponent(txtInsertarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(53, 53, 53)
+                .addComponent(btnEliminarClientes)
+                .addGap(51, 51, 51)
+                .addComponent(btnConsultarClientes)
+                .addGap(40, 40, 40)
+                .addComponent(btnInicio)
+                .addContainerGap(170, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jcMousePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jcMousePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jTabbedPane2.addTab("Registro de Personas", jInternalFrame2);
+        jTabbeRegistroClientes.addTab("Registro de Clientes", jInternalFrame1);
 
         jInternalFrame3.setVisible(true);
 
-        jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
+        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
-        jButton7.setText("Insertar Animales");
+        btnInsertarAnimales.setText("Insertar Animales");
 
-        jButton8.setText("Eliminar Animales");
+        btnEliminarAnimales.setText("Eliminar Animales");
 
-        jButton9.setText("Consultar Animales");
+        btnConsultarAnimales.setText("Consultar Animales");
 
         javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
         jcMousePanel1.setLayout(jcMousePanel1Layout);
         jcMousePanel1Layout.setHorizontalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                .addGap(93, 93, 93)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnConsultarAnimales)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jButton7))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(94, 94, 94)
-                        .addComponent(jButton8))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(94, 94, 94)
-                        .addComponent(jButton9)))
-                .addContainerGap(1102, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(btnInsertarAnimales))
+                    .addComponent(btnEliminarAnimales))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jButton7)
+                .addGap(71, 71, 71)
+                .addComponent(btnInsertarAnimales)
                 .addGap(33, 33, 33)
-                .addComponent(jButton8)
+                .addComponent(btnEliminarAnimales)
                 .addGap(42, 42, 42)
-                .addComponent(jButton9)
-                .addContainerGap(363, Short.MAX_VALUE))
+                .addComponent(btnConsultarAnimales)
+                .addContainerGap(261, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jInternalFrame3Layout = new javax.swing.GroupLayout(jInternalFrame3.getContentPane());
@@ -257,40 +251,36 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         );
         jInternalFrame3Layout.setVerticalGroup(
             jInternalFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jTabbedPane2.addTab("Registro de Animales", jInternalFrame3);
+        jTabbeRegistroClientes.addTab("Registro de Animales", jInternalFrame3);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/archive.png"))); // NOI18N
-        jMenu3.setText("Menú");
+        jMenuArchivo.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\archive.png")); // NOI18N
+        jMenuArchivo.setText("Archivo");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/cita.png"))); // NOI18N
-        jMenuItem1.setText("Registro de Citas");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuRegistroDeCitas.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\cita.png")); // NOI18N
+        jMenuRegistroDeCitas.setText("Registro de Citas");
+        jMenuRegistroDeCitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuRegistroDeCitasActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem1);
+        jMenuArchivo.add(jMenuRegistroDeCitas);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/exit.png"))); // NOI18N
-        jMenuItem2.setText("Salir");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\exit.png")); // NOI18N
+        jMenuSalir.setText("Salir");
+        jMenuSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuSalirActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem2);
+        jMenuArchivo.add(jMenuSalir);
 
-        jMenuBar2.add(jMenu3);
+        jMenuBar2.add(jMenuArchivo);
         jMenuBar2.add(jMenu4);
-
-        jMenu5.setText("Información");
-        jMenuBar2.add(jMenu5);
-
-        jMenu6.setText("Ayuda");
-        jMenuBar2.add(jMenu6);
 
         setJMenuBar(jMenuBar2);
 
@@ -298,35 +288,38 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbeRegistroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jTabbeRegistroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 507, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 22, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         Extends_RCC frm = new Extends_RCC();
         frm.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuRegistroDeCitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegistroDeCitasActionPerformed
         Registro_de_Citas frm = new Registro_de_Citas();
         frm.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuRegistroDeCitasActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMenuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSalirActionPerformed
         Aplicación frm = new Aplicación();
         frm.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMenuSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -355,6 +348,20 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -365,35 +372,33 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnConsultarAnimales;
+    private javax.swing.JButton btnConsultarClientes;
+    private javax.swing.JButton btnConsultarPersonas;
+    private javax.swing.JButton btnEliminarAnimales;
+    private javax.swing.JButton btnEliminarClientes;
+    private javax.swing.JButton btnElimnarPersonas;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnInsertarAnimales;
+    private javax.swing.JButton btnInsertarClientes;
+    private javax.swing.JButton btnInsertarPersonas;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JInternalFrame jInternalFrame3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenuArchivo;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuRegistroDeCitas;
+    private javax.swing.JMenuItem jMenuSalir;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTabbedPane jTabbeRegistroClientes;
+    private javax.swing.JTable jTablePerosonas;
     private jcMousePanel.jcMousePanel jcMousePanel1;
     private jcMousePanel.jcMousePanel jcMousePanel2;
     private jcMousePanel.jcMousePanel jcMousePanel3;
+    private javax.swing.JTextField txtInsertarClientes;
     // End of variables declaration//GEN-END:variables
 }

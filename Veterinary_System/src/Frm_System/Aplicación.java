@@ -37,137 +37,167 @@ public class Aplicación extends javax.swing.JFrame {
     private void initComponents() {
 
         jcMousePanel1 = new jcMousePanel.jcMousePanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        Passworld = new javax.swing.JPasswordField();
-        txtusuario = new javax.swing.JTextField();
-        btningresar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jcMousePanel2 = new jcMousePanel.jcMousePanel();
+        btnSalir = new javax.swing.JButton();
+        lblTitulo = new javax.swing.JLabel();
+        lblUsuario = new javax.swing.JLabel();
+        lblPassword = new javax.swing.JLabel();
+        txtPassworld = new javax.swing.JPasswordField();
+        txtUsuario = new javax.swing.JTextField();
+        btnIngresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
-        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1350, 690));
-        jcMousePanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 44)); // NOI18N
-        jLabel1.setText("SISTEMA VETERINARIO");
-        jcMousePanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 85, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/user.png"))); // NOI18N
-        jLabel2.setText("USUARIO:");
-        jcMousePanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 251, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/password.png"))); // NOI18N
-        jLabel3.setText("PASSWORD:");
-        jcMousePanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 380, -1, -1));
-        jcMousePanel1.add(Passworld, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, 201, 51));
-
-        txtusuario.addActionListener(new java.awt.event.ActionListener() {
+        btnSalir.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\exitprin.png")); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.setBorder(null);
+        btnSalir.setBorderPainted(false);
+        btnSalir.setContentAreaFilled(false);
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSalir.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtusuarioActionPerformed(evt);
+                btnSalirActionPerformed(evt);
             }
         });
-        jcMousePanel1.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 201, 49));
 
-        btningresar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/sign.png"))); // NOI18N
-        btningresar.setText("INGRESAR");
-        btningresar.setBorder(null);
-        btningresar.setBorderPainted(false);
-        btningresar.setContentAreaFilled(false);
-        btningresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btningresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btningresar.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        btningresar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btningresar.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 44)); // NOI18N
+        lblTitulo.setText("SISTEMA VETERINARIO");
+
+        lblUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblUsuario.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\user.png")); // NOI18N
+        lblUsuario.setText("USUARIO:");
+
+        lblPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblPassword.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\password.png")); // NOI18N
+        lblPassword.setText("PASSWORD:");
+
+        txtPassworld.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtPassworld.setForeground(new java.awt.Color(0, 0, 255));
+
+        txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtUsuario.setForeground(new java.awt.Color(0, 0, 255));
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+
+        btnIngresar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnIngresar.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\sign.png")); // NOI18N
+        btnIngresar.setText("INGRESAR");
+        btnIngresar.setBorder(null);
+        btnIngresar.setBorderPainted(false);
+        btnIngresar.setContentAreaFilled(false);
+        btnIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnIngresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnIngresar.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnIngresar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btningresarMouseClicked(evt);
+                btnIngresarMouseClicked(evt);
             }
         });
-        btningresar.addActionListener(new java.awt.event.ActionListener() {
+        btnIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btningresarActionPerformed(evt);
+                btnIngresarActionPerformed(evt);
             }
         });
-        jcMousePanel1.add(btningresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 530, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/exitprin.png"))); // NOI18N
-        jButton1.setText("Salir");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jcMousePanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 530, 54, -1));
-
-        jcMousePanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/mascot.png"))); // NOI18N
-
-        javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
-        jcMousePanel2.setLayout(jcMousePanel2Layout);
-        jcMousePanel2Layout.setHorizontalGroup(
-            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 336, Short.MAX_VALUE)
+        javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
+        jcMousePanel1.setLayout(jcMousePanel1Layout);
+        jcMousePanel1Layout.setHorizontalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTitulo)
+                            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                                .addComponent(lblUsuario)
+                                .addGap(128, 128, 128)
+                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                                .addComponent(lblPassword)
+                                .addGap(101, 101, 101)
+                                .addComponent(txtPassworld, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(224, Short.MAX_VALUE))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnIngresar)
+                        .addGap(128, 128, 128)
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(132, 132, 132))))
         );
-        jcMousePanel2Layout.setVerticalGroup(
-            jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 193, Short.MAX_VALUE)
+        jcMousePanel1Layout.setVerticalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(lblTitulo)
+                .addGap(62, 62, 62)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblUsuario)
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(71, 71, 71)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPassword)
+                    .addComponent(txtPassworld, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnIngresar)
+                    .addComponent(btnSalir))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
-
-        jcMousePanel1.add(jcMousePanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 250, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
-        String Usuario = "Jhon";
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
+        String Usuario = "jhon";
         String Contrasenia = "1234";
 
-        String Pass = new String(Passworld.getPassword());
+        String Pass = new String(txtPassworld.getPassword());
 
-        if(txtusuario.getText().equals(Usuario) && Pass.equals(Contrasenia)){
+        if(txtUsuario.getText().equals(Usuario) && Pass.equals(Contrasenia)){
             Extends_RCC frm = new Extends_RCC();
             frm.setVisible(true);
             dispose();
         }else{
             JOptionPane.showMessageDialog(null, "El Usuario o La Contraseña es Incorrecta", "Advertencia", JOptionPane.CLOSED_OPTION, Mensaje);
         }
-    }//GEN-LAST:event_btningresarActionPerformed
+    }//GEN-LAST:event_btnIngresarActionPerformed
 
-    private void btningresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btningresarMouseClicked
+    private void btnIngresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseClicked
 
-    }//GEN-LAST:event_btningresarMouseClicked
-
-    private void txtusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtusuarioActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnIngresarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -212,14 +242,13 @@ public class Aplicación extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Passworld;
-    private javax.swing.JButton btningresar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btnIngresar;
+    private javax.swing.JButton btnSalir;
     private jcMousePanel.jcMousePanel jcMousePanel1;
-    private jcMousePanel.jcMousePanel jcMousePanel2;
-    private javax.swing.JTextField txtusuario;
+    private javax.swing.JLabel lblPassword;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JPasswordField txtPassworld;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
