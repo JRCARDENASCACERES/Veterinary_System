@@ -38,6 +38,7 @@ public class Extends_RCC extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/Fond.png"))); // NOI18N
+        jcMousePanel1.setPreferredSize(new java.awt.Dimension(1350, 690));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen_System/regiscliente.png"))); // NOI18N
         jButton1.setText("Registro de Clientes");
@@ -81,7 +82,7 @@ public class Extends_RCC extends javax.swing.JFrame {
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
                         .addGap(282, 282, 282)
                         .addComponent(jButton3)))
-                .addContainerGap(247, Short.MAX_VALUE))
+                .addContainerGap(926, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,7 +93,7 @@ public class Extends_RCC extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addGap(29, 29, 29)
                 .addComponent(jButton3)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
