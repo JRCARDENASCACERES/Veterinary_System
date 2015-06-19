@@ -47,10 +47,10 @@ public class Aplicación extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
+        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PrettyEsperanza\\Pictures\\masc.jpg")); // NOI18N
 
         btnSalir.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\exitprin.png")); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 51, 102));
         btnSalir.setText("Salir");
         btnSalir.setBorder(null);
         btnSalir.setBorderPainted(false);
@@ -66,14 +66,15 @@ public class Aplicación extends javax.swing.JFrame {
         });
 
         lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 44)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(0, 51, 102));
         lblTitulo.setText("SISTEMA VETERINARIO");
 
         lblUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblUsuario.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\user.png")); // NOI18N
+        lblUsuario.setForeground(new java.awt.Color(0, 51, 102));
         lblUsuario.setText("USUARIO:");
 
         lblPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblPassword.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\password.png")); // NOI18N
+        lblPassword.setForeground(new java.awt.Color(0, 51, 102));
         lblPassword.setText("PASSWORD:");
 
         txtPassworld.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -88,7 +89,7 @@ public class Aplicación extends javax.swing.JFrame {
         });
 
         btnIngresar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnIngresar.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\sign.png")); // NOI18N
+        btnIngresar.setForeground(new java.awt.Color(0, 51, 102));
         btnIngresar.setText("INGRESAR");
         btnIngresar.setBorder(null);
         btnIngresar.setBorderPainted(false);
@@ -115,45 +116,40 @@ public class Aplicación extends javax.swing.JFrame {
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTitulo)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTitulo)
-                            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                                .addComponent(lblUsuario)
-                                .addGap(128, 128, 128)
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                                .addComponent(lblPassword)
-                                .addGap(101, 101, 101)
-                                .addComponent(txtPassworld, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(224, Short.MAX_VALUE))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnIngresar)
-                        .addGap(128, 128, 128)
-                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(132, 132, 132))))
+                        .addComponent(lblUsuario)
+                        .addGap(113, 113, 113)
+                        .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                            .addComponent(btnIngresar)
+                            .addGap(115, 115, 115)
+                            .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                            .addComponent(lblPassword)
+                            .addGap(76, 76, 76)
+                            .addComponent(txtPassworld, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
+                .addGap(23, 23, 23)
                 .addComponent(lblTitulo)
-                .addGap(62, 62, 62)
-                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(64, 64, 64)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUsuario)
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(71, 71, 71)
-                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPassword)
                     .addComponent(txtPassworld, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(62, 62, 62)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 237, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIngresar)
-                    .addComponent(btnSalir))
-                .addContainerGap(119, Short.MAX_VALUE))
+                    .addComponent(btnSalir, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnIngresar, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
