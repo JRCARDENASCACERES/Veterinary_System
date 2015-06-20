@@ -5,13 +5,30 @@
  */
 package Frm_System;
 
+import Clases.Cliente;
+import Clases.Conection;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Jhon World2 Reloaded
  */
 public class Registro_de_Clientes extends javax.swing.JFrame {
+    
+  DefaultListModel listModel = new DefaultListModel();
+    ArrayList<Registro_de_Clientes> cliente = new ArrayList<Registro_de_Clientes>();
 
-    /**
+    DefaultTableModel modelo = new DefaultTableModel();
+
+        /**
      * Creates new form NewJFrame
      */
     public Registro_de_Clientes() {
@@ -19,6 +36,8 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Registrar Clientes");
+         tblDatos.getColumnCount();
+        modelo = (DefaultTableModel) tblDatos.getModel();
     }
 
     /**
@@ -47,7 +66,20 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         btnEliminarClientes = new javax.swing.JButton();
         btnConsultarClientes = new javax.swing.JButton();
         btnInicio = new javax.swing.JButton();
-        txtInsertarClientes = new javax.swing.JTextField();
+        lblNombre = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        spEdad = new javax.swing.JSpinner();
+        txtDni = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tblDatos = new javax.swing.JTable();
         jInternalFrame3 = new javax.swing.JInternalFrame();
         jcMousePanel1 = new jcMousePanel.jcMousePanel();
         btnInsertarAnimales = new javax.swing.JButton();
@@ -70,13 +102,26 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jInternalFrame2.setFrameIcon(null);
         jInternalFrame2.setVisible(true);
 
-        jcMousePanel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
-
         btnInsertarPersonas.setText("Insertar Personas");
+        btnInsertarPersonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertarPersonasActionPerformed(evt);
+            }
+        });
 
         btnElimnarPersonas.setText("Eliminar Personas");
+        btnElimnarPersonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnElimnarPersonasActionPerformed(evt);
+            }
+        });
 
         btnConsultarPersonas.setText("Consultar Personas");
+        btnConsultarPersonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultarPersonasActionPerformed(evt);
+            }
+        });
 
         jTablePerosonas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -144,11 +189,21 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jInternalFrame1.setFrameIcon(null);
         jInternalFrame1.setVisible(true);
 
-        jcMousePanel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
+        jcMousePanel2.setIcon(new javax.swing.ImageIcon("D:\\TERCER CICLO\\JAVA\\PROYECTO\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\prueva.jpg")); // NOI18N
 
         btnInsertarClientes.setText("Insertar Clientes");
+        btnInsertarClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertarClientesActionPerformed(evt);
+            }
+        });
 
         btnEliminarClientes.setText("Eliminar Clientes");
+        btnEliminarClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarClientesActionPerformed(evt);
+            }
+        });
 
         btnConsultarClientes.setText("Consultar Clientes");
 
@@ -159,39 +214,145 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
             }
         });
 
+        lblNombre.setText("Nombre:");
+
+        lblApellido.setText("Apellido:");
+
+        jLabel3.setText("Edad:");
+
+        jLabel4.setText("DNI:");
+
+        jLabel5.setText("Telefono:");
+
+        jLabel6.setText("Direccion:");
+
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreActionPerformed(evt);
+            }
+        });
+
+        spEdad.setModel(new javax.swing.SpinnerNumberModel(0, 0, 100, 1));
+
+        tblDatos.setBackground(new java.awt.Color(255, 153, 51));
+        tblDatos.setFont(new java.awt.Font("Trebuchet MS", 3, 14)); // NOI18N
+        tblDatos.setForeground(new java.awt.Color(0, 102, 0));
+        tblDatos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Edad", "DNI", "Telefono", "Direccion"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tblDatos.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                tblDatosAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jScrollPane2.setViewportView(tblDatos);
+
         javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
         jcMousePanel2.setLayout(jcMousePanel2Layout);
         jcMousePanel2Layout.setHorizontalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel2Layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(btnInsertarClientes)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnEliminarClientes)
+                .addGap(36, 36, 36)
+                .addComponent(btnConsultarClientes)
+                .addGap(96, 96, 96))
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnConsultarClientes)
-                        .addComponent(btnEliminarClientes)
-                        .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                            .addComponent(btnInsertarClientes)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtInsertarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(btnInicio)))
-                .addContainerGap(328, Short.MAX_VALUE))
+                        .addGap(205, 205, 205)
+                        .addComponent(btnInicio))
+                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                        .addComponent(lblApellido)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtApellido))
+                                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                        .addComponent(lblNombre)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel4)
+                                        .addGap(55, 55, 55))
+                                    .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                        .addGap(173, 173, 173)
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(37, 37, 37)
+                                .addComponent(spEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel6)
+                                .addGap(33, 33, 33)))
+                        .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(21, 21, 21))
+            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jcMousePanel2Layout.setVerticalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
+                .addGap(39, 39, 39)
                 .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnInsertarClientes)
-                    .addComponent(txtInsertarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addComponent(btnEliminarClientes)
-                .addGap(51, 51, 51)
-                .addComponent(btnConsultarClientes)
-                .addGap(40, 40, 40)
+                    .addComponent(lblNombre)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addGap(27, 27, 27)
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblApellido)
+                    .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel5)))
+                .addGap(24, 24, 24)
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(spEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6)
+                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnConsultarClientes)
+                    .addComponent(btnEliminarClientes)
+                    .addComponent(btnInsertarClientes))
+                .addGap(10, 10, 10)
                 .addComponent(btnInicio)
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
@@ -208,8 +369,6 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         jTabbeRegistroClientes.addTab("Registro de Clientes", jInternalFrame1);
 
         jInternalFrame3.setVisible(true);
-
-        jcMousePanel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\Fond.png")); // NOI18N
 
         btnInsertarAnimales.setText("Insertar Animales");
 
@@ -258,10 +417,8 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
 
         jTabbeRegistroClientes.addTab("Registro de Animales", jInternalFrame3);
 
-        jMenuArchivo.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\archive.png")); // NOI18N
         jMenuArchivo.setText("Archivo");
 
-        jMenuRegistroDeCitas.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\cita.png")); // NOI18N
         jMenuRegistroDeCitas.setText("Registro de Citas");
         jMenuRegistroDeCitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -270,7 +427,6 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         });
         jMenuArchivo.add(jMenuRegistroDeCitas);
 
-        jMenuSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\JORGE RODOLFO\\Desktop\\jorge\\cursos\\Tercer ciclo\\LENGUAJES Y HERRAMIENTAS DE DESARROLLO DE SOFTWARE\\Proyecto en java\\Veterinary_System\\Veterinary_System\\src\\Imagen_System\\exit.png")); // NOI18N
         jMenuSalir.setText("Salir");
         jMenuSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,6 +476,93 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
         frm.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuSalirActionPerformed
+
+    private void btnInsertarPersonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarPersonasActionPerformed
+       
+       
+    }//GEN-LAST:event_btnInsertarPersonasActionPerformed
+
+    private void btnElimnarPersonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnElimnarPersonasActionPerformed
+       
+    }//GEN-LAST:event_btnElimnarPersonasActionPerformed
+
+    private void btnConsultarPersonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarPersonasActionPerformed
+       
+    }//GEN-LAST:event_btnConsultarPersonasActionPerformed
+
+    private void btnInsertarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarClientesActionPerformed
+
+         Cliente C = new Cliente();
+         C.setNombre(txtNombre.getText());
+         C.setApellido(txtApellido.getText());
+         C.setEdad((int)spEdad.getValue());
+         C.setDNI(txtDni.getText());
+         C.setTelefono(txtTelefono.getText());
+         C.setDireccion(txtDireccion.getText());
+        
+        //para enlazar con la clase Conectar...y enviarle al wampserver
+        Conection con = new Conection();
+        Connection reg = con.conexion();
+        String nom, ape, dir, tel, dni;
+        int edad;
+        String sql;
+
+        nom = txtNombre.getText();
+        ape = txtApellido.getText();
+        tel = txtTelefono.getText();
+        dir = txtDireccion.getText();
+        dni = txtDni.getText();
+        edad = (Integer) spEdad.getValue();
+
+        sql = "INSERT INTO cRegistro_de_Clientes (cli_nombre,cli_apellido,cli_edad,cli_dni,cli_telefono,cli_direccion)VALUES(?,?,?,?,?,?)";
+        try {
+            PreparedStatement pst = reg.prepareStatement(sql);
+            pst.setString(1, nom);
+            pst.setString(2, ape);
+            pst.setInt(3, edad);
+            pst.setString(4, dni);
+            pst.setString(5, tel);
+            pst.setString(6, dir);
+
+            int n = pst.executeUpdate();
+            if (n > 0) {
+                JOptionPane.showMessageDialog(null, "Se Registro Correctamente");
+
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Registro_de_Clientes.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //hasta akí vamos a enviar al wampServer
+
+         modelo.addRow(new Object[]{C.getNombre(), C.getApellido(), C.getEdad(),C.getDNI(),C.getTelefono(),C.getDireccion()});
+         //Esto es para borrar los datos ingresados
+         listModel.clear();
+         spEdad.setValue(0);
+         txtNombre.setText("");
+         txtApellido.setText("");
+         txtDni.setText("");
+         txtTelefono.setText("");
+         txtDireccion.setText("");
+    }//GEN-LAST:event_btnInsertarClientesActionPerformed
+
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreActionPerformed
+
+    private void tblDatosAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tblDatosAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tblDatosAncestorAdded
+
+    private void btnEliminarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClientesActionPerformed
+         int eliminarDatos = tblDatos.getSelectedRow();
+        if (eliminarDatos >= 0) {
+            modelo.removeRow(eliminarDatos);
+        } else {
+            JOptionPane.showMessageDialog(null, "La contraseña es invalida");
+
+        }
+    }//GEN-LAST:event_btnEliminarClientesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -385,6 +628,10 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JInternalFrame jInternalFrame3;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
@@ -394,11 +641,20 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuRegistroDeCitas;
     private javax.swing.JMenuItem jMenuSalir;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbeRegistroClientes;
     private javax.swing.JTable jTablePerosonas;
     private jcMousePanel.jcMousePanel jcMousePanel1;
     private jcMousePanel.jcMousePanel jcMousePanel2;
     private jcMousePanel.jcMousePanel jcMousePanel3;
-    private javax.swing.JTextField txtInsertarClientes;
+    private javax.swing.JLabel lblApellido;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JSpinner spEdad;
+    private javax.swing.JTable tblDatos;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtDireccion;
+    private javax.swing.JTextField txtDni;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
