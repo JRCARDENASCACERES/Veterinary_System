@@ -562,7 +562,14 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "La contraseña es invalida");
 
         }
-    }//GEN-LAST:event_btnEliminarClientesActionPerformed
+    }
+    private void btnEliminarTodoActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        // TODO add your handling code here:
+        int cantidadFila=tblDatos.getRowCount();
+        for (int i = cantidadFila-1; i >= 0; i--) {
+            tblDatos.removeRowSelectionInterval(i, i);
+        }
+    }                
 
     /**
      * @param args the command line arguments
@@ -621,6 +628,7 @@ public class Registro_de_Clientes extends javax.swing.JFrame {
     private javax.swing.JButton btnEliminarAnimales;
     private javax.swing.JButton btnEliminarClientes;
     private javax.swing.JButton btnElimnarPersonas;
+    private javax.swing.JButton btnEliminarTodo;
     private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnInsertarAnimales;
     private javax.swing.JButton btnInsertarClientes;
